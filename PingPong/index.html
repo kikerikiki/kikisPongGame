@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kikis Pong Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: #000;
+        }
+        canvas {
+            background: #333;
+        }
+        .scores {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="scores">
+        <div>Player 1: <span id="score1">0</span></div>
+        <div>Player 2: <span id="score2">0</span></div>
+    </div>
+    <canvas id="pongCanvas" width="800" height="600"></canvas>
+    <script src="pong.js"></script>
+</body>
+</html>
